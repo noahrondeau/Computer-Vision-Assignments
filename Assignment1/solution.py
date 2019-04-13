@@ -75,7 +75,7 @@ if __name__ == "__main__":
     #Sharpen the image and return the result
     res = imfilter2d(img)
     #Show the sharpened image
-    show_img(res)
+    show_image(res)
     #Save the sharpened image as "sharpened.png"
-    save_img(res, "sharpened.png")
+    save_image(res, "sharpened.png")
 
