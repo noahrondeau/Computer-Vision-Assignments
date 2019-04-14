@@ -23,7 +23,7 @@ def read_image(image_path):
 #       image_path = string path to save the image
 #Output: True if image saved successfully, False otherwise
 def save_image(image_to_save, image_path):
-    TODO
+    cv2.imwrite(image_path, image_to_save)
 
 #5 marks: Display image (you can use either cv2 or matplotlib
 #Input: image_to_show = image to display
