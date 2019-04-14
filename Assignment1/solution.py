@@ -4,7 +4,6 @@
 #        python3 a1.py (uses default path = "pear.png")       
 
 #Using "as" nicknames a library so you don't have to use the full name
-import matplotlib.pyplot as plt
 import numpy as np
 import cv2
 import argparse as ap
@@ -17,7 +16,7 @@ TODO = None
 #Input: image_path = string path to the image
 #Output: HxWx1 numpy array containing the image
 def read_image(image_path):
-    TODO
+    return cv2.imread(image_path)
 
 #5 marks: Save an image and return True is successful, False if not
 #Input: image_to_save = 8 unsigned integer numpy array (image)
@@ -29,7 +28,8 @@ def save_image(image_to_save, image_path):
 #5 marks: Display image (you can use either cv2 or matplotlib
 #Input: image_to_show = image to display
 def show_image(image_to_show):
-    TODO
+    cv2.imshow("Image", image_to_show)
+    cv2.waitKey(0)
 
 #----------------Image Processing (35 marks)-------------------------
 """
@@ -39,6 +39,8 @@ Input: img = input HxWx1 grayscale image
 Output: return unsigned 8b integer image
 """
 def imfilter2d(img,ksize=9,padding=cv2.BORDER_REFLECT):
+
+    return img
     #5 Mark: Create sharpen filter with a 9x9 Gaussian kernel with sigma 5, and unit
     #        impulse of 2 
     kernel = TODO
